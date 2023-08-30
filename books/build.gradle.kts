@@ -29,6 +29,8 @@ dependencies {
 
     implementation("io.quarkus:quarkus-rest-client-reactive")
     implementation("io.quarkus:quarkus-rest-client-reactive-jackson")
+
+    implementation("io.quarkus:quarkus-smallrye-health")
 }
 
 tasks.test {

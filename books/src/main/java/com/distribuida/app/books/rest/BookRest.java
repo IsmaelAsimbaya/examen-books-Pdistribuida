@@ -5,6 +5,7 @@ import com.distribuida.app.books.db.Book;
 import com.distribuida.app.books.dtos.AuthorDto;
 import com.distribuida.app.books.dtos.BookDto;
 import com.distribuida.app.books.repo.BookRepository;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @Transactional
+@ApplicationScoped
 public class BookRest {
 
     @Inject
